@@ -75,6 +75,20 @@
                             <option value="cheque">Cheque</option>
                     </select>
                 </div>
+                <br /><br />
+                <div style="display:flex; justify-content:space-between">
+                    <label for="invoiceType1" class="font-size-12" style="width:20%;padding:10px;" >Order Source</label>
+                    <select id="invoiceType1" onchange="update()" placeholder="Select State" style="width:25%; padding:5px; height: 40px;">
+                            <option value="Online">Online</option>
+                            <option value="Offline">Offline</option>
+                    </select>
+
+                    <label for="invoiceType2" class="font-size-12" style="width:20%;padding:10px;" >Client Type</label>
+                    <select id="invoiceType2" onchange="update()" placeholder="Select State" style="width:25%; padding:5px; height: 40px;">
+                            <option value="(B2B)">B2B</option>
+                            <option value="(B2C)">B2C</option>
+                    </select>
+                </div>
 
                 <br />
                 <div style="display:flex; justify-content:flex-start">
@@ -167,10 +181,14 @@
                             <p class="margin-tb-5px">
                                 <b>Invoice No.</b>
                             </p>
+                            <p class="margin-tb-5px">
+                                <b>Invoice Type.</b>
+                            </p>
                         </div>
                         <div style="width: 50%;" align="left">
                             <p class="margin-tb-5px" id="IinvoiceDate"></p>
                             <p class="margin-tb-5px" id="IinvoiceNo"></p>
+                            <p class="margin-tb-5px" id="IinvoiceType"></p>
                         </div>
                     </div>
                 </div>

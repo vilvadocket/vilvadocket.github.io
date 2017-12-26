@@ -36,6 +36,8 @@ var update = function () {
     var custGSTIN = document.getElementById("custGSTIN");
     var shipAddress = document.getElementById("shipAddress");
     var billAddress = document.getElementById("billAddress");
+    var invoiceType1 = document.getElementById("invoiceType1");
+    var invoiceType2 = document.getElementById("invoiceType2");
 
     var IinvoiceDate = document.getElementById("IinvoiceDate");
     var IinvoiceNo = document.getElementById("IinvoiceNo");
@@ -43,13 +45,15 @@ var update = function () {
     var IcustGSTIN = document.getElementById("IcustGSTIN");
     var IshipAddress = document.getElementById("IshipAddress");
     var IbillAddress = document.getElementById("IbillAddress");
+    var IinvoiceType = document.getElementById("IinvoiceType");
 
     IinvoiceDate.innerText = invoiceDate.value;
     IinvoiceNo.innerText = invoiceNo.value;
     IcustName.innerText = custName.value;
     IcustGSTIN.innerText = custGSTIN.value;
-    IshipAddress.innerText = shipAddress.value;
-    IbillAddress.innerText = billAddress.value;
+    IshipAddress.innerText = billAddress.value;
+    IbillAddress.innerText = shipAddress.value;
+    IinvoiceType.innerHTML = invoiceType1.value + ' ' + invoiceType2.value
 
 }
 
