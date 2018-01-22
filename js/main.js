@@ -38,6 +38,7 @@ var update = function () {
     var billAddress = document.getElementById("billAddress");
     var invoiceType1 = document.getElementById("invoiceType1");
     var invoiceType2 = document.getElementById("invoiceType2");
+    var remarks = document.getElementById("remarks");
 
     var IinvoiceDate = document.getElementById("IinvoiceDate");
     var IinvoiceNo = document.getElementById("IinvoiceNo");
@@ -46,7 +47,8 @@ var update = function () {
     var IshipAddress = document.getElementById("IshipAddress");
     var IbillAddress = document.getElementById("IbillAddress");
     var IinvoiceType = document.getElementById("IinvoiceType");
-
+    var remarkView = document.getElementById("remarkView");
+    
     IinvoiceDate.innerText = invoiceDate.value;
     IinvoiceNo.innerText = invoiceNo.value;
     IcustName.innerText = custName.value;
@@ -54,6 +56,7 @@ var update = function () {
     IshipAddress.innerText = billAddress.value;
     IbillAddress.innerText = shipAddress.value;
     IinvoiceType.innerHTML = invoiceType1.value + ' ' + invoiceType2.value
+    remarkView.innerHTML = "Remarks : " + remarks.value;
 
 }
 

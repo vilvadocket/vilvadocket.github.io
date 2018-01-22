@@ -95,6 +95,12 @@
                     <input type="checkbox" id="reversal" align="right" value="yes" style="width:5%; margin-left:20%; padding:5px; height: 40px;">
                     <label for="reversal" class="font-size-12" style="width:40%;padding:10px;" >Liable under Reverse Charge (Customer GSTIN mandatory)</label>
                 </div>
+
+                <br />
+                <div style="display:flex; justify-content:flex-start;">
+                    <label for="remarks" class="font-size-12" style="width:20%;padding:10px;" >Remarks</label>
+                    <textarea type="text" id="remarks" style="width:25%; padding:5px;" onchange="update()"></textarea>
+                </div>
                 
             </form>
 
@@ -289,6 +295,7 @@
         <hr />
 
         <div>
+            <p id="remarkView"></p>
             <p align="center">This is a computer generated invoice. No signature is required</p>
         </div>
 
